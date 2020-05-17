@@ -11,15 +11,17 @@ import javax.faces.context.FacesContext;
 import fehidro.model.Usuario;
 import fehidro.rest.client.UsuarioRESTClient;
 
-@ManagedBean
+@ManagedBean//(name="Usuario")
 @SessionScoped
 public class UsuarioBean implements Serializable {
 	private static final long serialVersionUID = 1L;
 	private Usuario usuario;
 	private List<Usuario> usuarios;
-
-
 	private String consulta;
+	
+//	private Usuario usuario = new Usuario();
+
+	
 	
 	public UsuarioBean() {
 		UsuarioRESTClient rest = new UsuarioRESTClient();

@@ -9,6 +9,40 @@
 </h:head>
 <h:body>
 	<h1>Cadastro de novos usuarios</h1>
-	
+	<h:form id="frm">
+		<h:outputLabel> 
+			<h:outputText value="Nome:  "/> 
+		</h:outputLabel>
+<!-- 		<h:inputText id="txtUserName" value="#{User.usuario}"/><br/> -->
+		
+		<h:commandButton id="btnNewUser" value="Adicionar Usuario" action="#{UsuarioBean.paginaUsuario}"/>
+		
+<!-- 		<h:inputText value="#{UsuarioBean.consulta}"/>  -->
+<!-- 		<h:commandButton value="Consultar" -->
+<!-- 			action="#{UsuarioBean.consultar}" /> -->
+<!-- 		<h:dataTable value="#{UsuarioBean.usuarios}" var="u" -->
+<!-- 			styleClass="tabela" captionClass="tabelaCaption" -->
+<!-- 			headerClass="tabelaHeader" rowClasses="linhaPar, linhaImpar"> -->
+<!-- 			<h:column> -->
+<!-- 				<f:facet name="header">Id</f:facet> -->
+<!-- 				<h:outputText value="#{u.id}" /> -->
+<!-- 			</h:column> -->
+<!-- 			<h:column> -->
+<!-- 				<f:facet name="header">Categoria</f:facet> -->
+<!-- 				<h:outputText value="#{u.nome}" /> -->
+<!-- 			</h:column> -->
+<!-- 			<h:column> -->
+<!-- 				<f:facet name="header">Editar</f:facet> -->
+<!-- 				<h:commandButton value="Editar" action="#{UsuarioBean.paginaUsuario(u)}"/> -->
+<!-- 			</h:column> -->
+<!-- 			<h:column> -->
+<!-- 				<f:facet name="header">Excluir</f:facet> -->
+<!-- 				<h:commandButton value="Excluir" onclick="return confirm('Confirma a exclusão');" action="#{UsuarioBean.excluir(u)}"/> -->
+<!-- 			</h:column> -->
+			
+<!-- 		</h:dataTable> -->
+<!-- 		<h:commandButton value="Nova categoria" action="#{UsuarioBean.paginaUsuarioCadastro}"/> -->
+<!-- 		<h:messages styleClass="erro"/> -->
+	</h:form>
 </h:body>
 </html>

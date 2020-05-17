@@ -5,17 +5,12 @@
 	xmlns:f="http://xmlns.jcp.org/jsf/core">
 <h:head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<title>Fehidro</title>
+	<title>Fehidro - Login</title>
 </h:head>
 <h:body>
-	<h1>Sopa</h1>
-	<h:form id="frm">
-		
-		<h:inputText id="UserName" value="#{UsuarioBean.usuario.nome}"/> 
-		
-		<h:outputText value="#{UsuarioBean.consulta}"></h:outputText>
-
-		<h:messages styleClass="erro"/>
-	</h:form>
+	<h1>Login</h1>
+	
+		<h:inputText value="#{usuarioBean.consulta}"/> 
+	
 </h:body>
 </html>
