@@ -6,13 +6,12 @@ import javax.persistence.Persistence;
 
 public class JPAEntityManager {
 	private static EntityManagerFactory emf = null;
-	   private static final String PU_NAME = "fehidroPU";
-
-	   public static EntityManager getEntityManager() {
-	      if (emf == null) {
-	         emf = Persistence.
-	              createEntityManagerFactory(PU_NAME);
-	      }
-	      return emf.createEntityManager();
-	   }
+	private static final String PU_NAME = "fehidroPU";
+	
+	public static EntityManager getEntityManager() {
+		if (emf == null) {
+			emf = Persistence.createEntityManagerFactory(PU_NAME);
+	    }
+	    return emf.createEntityManager();
+	}
 }

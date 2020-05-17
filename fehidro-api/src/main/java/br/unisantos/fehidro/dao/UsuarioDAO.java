@@ -11,11 +11,11 @@ public class UsuarioDAO extends DAOFactory<Usuario> {
 	}
 
 	
-	public void cadastrar(Usuario usuario) {
+	public void adicionar(UsuarioDAO usuario) {
 		adicionar(usuario);
 	}
 	
-	public void atualizar(Usuario usuario) {
+	public void atualizar(UsuarioDAO usuario) {
 		atualizar(usuario);
 	}
 
